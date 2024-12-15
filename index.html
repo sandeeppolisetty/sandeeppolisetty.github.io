@@ -5,10 +5,12 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 <title>Sandeep Polisetty</title>
 <style>
+  /* Reset & Base Styles */
   html, body {
-    margin: 0; padding: 0;
+    margin: 0; 
+    padding: 0;
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-    background: #fdfdfd;
+    background: linear-gradient(to bottom right, #fdfdfd, #f8f8f8);
     color: #333;
   }
 
@@ -18,33 +20,36 @@
     align-items: center;
     height: 100vh;
     text-align: center;
+    padding: 0 20px;
+    box-sizing: border-box;
   }
 
   .container {
     max-width: 600px;
-    padding: 20px;
   }
 
   h1 {
     font-size: 2.5rem;
-    margin-bottom: 0.5rem;
+    margin-bottom: 0.75rem;
     font-weight: 600;
     letter-spacing: -0.5px;
   }
 
-  p {
-    font-size: 1.1rem;
-    line-height: 1.5;
-    margin-bottom: 2rem;
+  h2 {
+    font-size: 1.2rem;
+    font-weight: 400;
     color: #555;
+    margin-bottom: 1.5rem;
+    line-height: 1.4;
   }
 
   a.button {
     display: inline-block;
-    padding: 0.75rem 1.25rem;
+    padding: 0.75rem 1.5rem;
+    margin-top: 1rem;
     text-decoration: none;
-    border: 1px solid #333;
-    border-radius: 5px;
+    border: 2px solid #333;
+    border-radius: 50px;
     font-size: 1rem;
     transition: all 0.2s ease;
     color: #333;
@@ -55,22 +60,27 @@
     color: #fff;
   }
 
-  /* For a cleaner look on mobile */
+  /* Responsive Adjustments */
   @media(max-width: 480px) {
     h1 {
       font-size: 2rem;
     }
-    p {
+    h2 {
       font-size: 1rem;
+    }
+    a.button {
+      font-size: 0.95rem;
+      padding: 0.65rem 1.25rem;
     }
   }
 </style>
 </head>
 <body>
   <div class="container">
-    <h1>Hello, this Sandeep's personal page.</h1>
+    <h1>Hello, from Sandeep Polisetty.</h1>
+
     <a class="button" href="https://www.linkedin.com/in/sandeeppolisetty/" target="_blank" rel="noopener noreferrer">
-      Connect on LinkedIn
+      Connect with me on LinkedIn
     </a>
   </div>
 </body>
