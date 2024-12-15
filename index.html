@@ -3,108 +3,89 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-<title>Sandeep Polisetty - al rajhi bank</title>
-<meta name="description" content="Official personal website of Sandeep Polisetty. al rajhi bank, FAB, first abu dhabi bank, kony, temenos, fico, Saudi Arabia, KSA, Riyadh, Kingdom of Saudi Arabia, Dubai, Abu Dhabi, UAE, United Arab Emirates">
+<title>Sandeep Polisetty - alrajhi bank</title>
+<meta name="description" content="Official personal website of Sandeep Polisetty. Living in Riyadh, Saudi Arabia. Works at alrajhi bank. Also, lived and worked in Abu Dhabi and Dubai in the past.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<!-- Montserrat for a clean, modern aesthetic -->
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+<!-- Clean, modern font -->
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
 
 <style>
+  html {
+    box-sizing: border-box;
+  }
+  *, *::before, *::after {
+    box-sizing: inherit;
+  }
+
   html, body {
     margin: 0; 
     padding: 0;
-    font-family: 'Montserrat', sans-serif;
-    color: #ffffff;
+    font-family: 'Inter', sans-serif;
+    color: #333;
+    background: linear-gradient(to bottom right, #fafafa, #ffffff);
     height: 100vh;
-    overflow: hidden; 
-  }
-
-  body {
     display: flex; 
     justify-content: center; 
     align-items: center; 
     text-align: center;
-    background: linear-gradient(-45deg, #3c00ff, #006aff, #00ffb2, #9aff00);
-    background-size: 400% 400%;
-    animation: gradientBG 15s ease infinite;
-  }
-
-  @keyframes gradientBG {
-    0% { background-position: 0% 50%; }
-    50% { background-position: 100% 50%; }
-    100% { background-position: 0% 50%; }
   }
 
   .container {
+    width: 100%;
     max-width: 600px;
+    margin: 0 20px; /* Add margin to prevent edges from touching on small screens */
     padding: 20px;
-    background: rgba(0,0,0,0.35);
-    border-radius: 20px;
-    backdrop-filter: blur(10px);
-    box-shadow: 0 0 30px rgba(0,0,0,0.2);
-    animation: fadeIn 1.5s ease-in-out;
-  }
-
-  @keyframes fadeIn {
-    0% {opacity:0; transform: translateY(20px);}
-    100% {opacity:1; transform: translateY(0);}
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    box-sizing: border-box;
   }
 
   h1 {
-    font-size: 2.2rem;
+    font-size: 1.9rem;
     font-weight: 600;
     margin-bottom: 1rem;
-    letter-spacing: -0.5px;
   }
 
   h2 {
-    font-size: 1.1rem;
+    font-size: 1.05rem;
     font-weight: 400;
     line-height: 1.6;
-    color: #e0e0e0;
+    color: #555;
     margin-bottom: 2rem;
   }
 
   .button {
     display: inline-block;
-    padding: 0.75rem 1.5rem;
-    margin-top: 1.5rem;
+    padding: 0.6rem 1.4rem;
     text-decoration: none;
-    border: 1px solid #ffffff;
-    border-radius: 50px;
-    font-size: 1rem;
-    color: #ffffff;
-    transition: all 0.3s ease;
-    position: relative;
-    overflow: hidden;
-  }
-
-  .button::before {
-    content: "";
-    position: absolute;
-    top:0; left:0;
-    width:100%; height:100%;
-    background: linear-gradient(to right, rgba(255,255,255,0.2), rgba(255,255,255,0));
-    transform: translateX(-100%);
-    transition: all 0.4s ease;
-  }
-
-  .button:hover::before {
-    transform: translateX(100%);
+    border: 1px solid #333;
+    border-radius: 25px;
+    font-size: 0.95rem;
+    color: #333;
+    transition: background 0.2s ease, color 0.2s ease;
   }
 
   .button:hover {
-    background: rgba(255,255,255,0.1);
-    border-color: #ffffff;
+    background: #333;
+    color: #fff;
   }
 
-  @media(max-width: 480px) {
+  @media (max-width: 480px) {
     h1 {
-      font-size: 1.8rem;
+      font-size: 1.6rem;
     }
     h2 {
       font-size: 1rem;
+    }
+    .container {
+      margin: 0 10px;
+      padding: 15px;
+    }
+    .button {
+      font-size: 0.9rem;
+      padding: 0.5rem 1.2rem;
     }
   }
 </style>
@@ -113,7 +94,8 @@
   <div class="container">
     <h1>Sandeep Polisetty</h1>
     <h2>
-      Advanced through a spectrum of leadership roles in Application Development, Enterprise Architecture, IT Strategy and Cloud. Assembled and guided teams to deliver business-focused outcomes at speed.
+      Advanced through a spectrum of leadership roles in Application Development, Enterprise Architecture, IT Strategy and Cloud.
+
     </h2>
     <a class="button" href="https://www.linkedin.com/in/sandeeppolisetty/" target="_blank" rel="noopener noreferrer">
       Connect on LinkedIn
